@@ -191,6 +191,7 @@ button:hover {
     }
 
     .rodape__conteudo{
+        padding-left: 1%;
         gap: 5%;
         width: auto;
     }
