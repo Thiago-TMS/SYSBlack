@@ -177,14 +177,21 @@ button:hover {
 @media (max-width:620px){
     .cabecalho__nav{
         gap: 1%;
+        padding: 0%;
+        width: auto;
     }
 
     .cabecalho__logo{
-        padding: 0% 25% 0% 25%;
+        padding: 0% 0% 0% 0%;
     }
+
+    .conteudo{
+        padding: 5% 0% 20% 0%;
+        width: auto;
+    }
+
     .rodape__conteudo{
         gap: 5%;
-        width: 100%;
-        background-color: aliceblue;
+        width: auto;
     }
 }
