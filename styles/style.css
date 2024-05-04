@@ -191,8 +191,13 @@ button:hover {
     }
 
     .rodape__conteudo{
-        padding-left: 1%;
+        padding-left: 0%;
         gap: 5%;
         width: auto;
+    }
+    .rodape__conteudo__uteis{
+        display: flex;
+        flex-direction: column;
+        padding: 0% 0% 0% 0%;
     }
 }
