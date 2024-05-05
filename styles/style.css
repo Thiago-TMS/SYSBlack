@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *{
     margin: 0%;
@@ -18,16 +19,38 @@ body{
 }
 
 .cabecalho{
+    box-sizing: border-box;
+    display: block;
     color: aliceblue;
     gap: 10%;
 }
 
-.cabecalho__logo{
+.cabecalho__nome{
     display: flex;
-    justify-content: center;
-    padding-left: 2%;
-    max-width: 13.5rem;
+    align-items: center;
 }
+
+.cabecalho__nome__logo{
+    padding-left: 2%;
+}
+  
+.nome {
+    display: flex;
+    position: absolute;
+    padding: 0% 0% 0.2% 33.7%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color:rgb(62, 61, 61) ;
+}
+  
+  .nome__baixo {
+    display: flex;
+    position: absolute;
+    padding-left: 34%;
+    color: #5AC051;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+  }
 
 .cabecalho__nav{
     display: flex;
@@ -40,17 +63,23 @@ body{
     box-sizing: border-box;
 }
 
+.cabecalho__nav__link{
+    border-style: solid;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    border-radius: 10px;
+}
+
 .cabecalho__nav__link:hover{
     color:#5AC051 ;
     transition: 0.2s;
 }
 
 .conteudo {
-    padding: 5% 15% 20% 15%;
     display: flex;
-    align-items: center;
+    padding: 5% 15% 6% 15%;
     text-align: justify;
     flex-direction: column;
+    color: #5AC051;
 
 }
 
@@ -58,12 +87,12 @@ body{
     width: 62.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
-    color: #5AC051;
+    gap: 0.725rem;
     font-family: 'montserrat', sans-serif;
     font-size: 1.25rem;
     text-align: justify;
     width: 100%;
+    padding-bottom: 1%;
 
 }
 
@@ -81,6 +110,63 @@ body{
 
 }
 
+table{
+    background-color:#000512
+}
+
+.tabela__curso{
+    display: flex;
+    gap: 1%;
+}
+
+.tabela__curso__continuacao{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin: 1%;
+}
+
+.curso{
+    border-style: solid;
+    border-color:#ffffff;
+    width: 35%;
+    height: 410px;
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+}
+
+
+.titulo{
+    text-align: center;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    color: aliceblue;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1rem;
+    
+}
+
+.descricao{
+    text-align: justify;
+    padding: 0% 0% 2% 0%;
+}
+
+.intro{
+    width: 100%;
+    max-width: 20rem;
+    max-height: 10rem;
+}
+
+.botao{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 5px;
+    
+}
 
 .tabela {
     padding: 2% 15% 25% 15%;
@@ -127,8 +213,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0f0;
+button:hover, .botao:hover {
+    color: #5AC051;
 }
 
 
@@ -138,38 +224,24 @@ button:hover {
     font-size: 0.9rem;
     box-sizing: border-box;
     text-align: justify;
-}
-
-.rodape__logo{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-left: 2%;
-    max-width: 13.5rem;
+    padding-bottom: 1%;
+
 }
 
-.rodape__conteudo{
-    display: flex;
-    gap: 40%;
-}
-
-.rodape__conteudo__uteis{
+.imagem__rodape{
     display: flex;
     flex-direction: column;
-    padding: 0% 0% 0% 10%;
+    max-width: 2rem;
+    max-height: 2rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.rodape__contatos{
-    display: flex;
-    flex-direction: column;
-}
-
-.imagem__rodape__contatos{
-    max-width: 0.9375rem;
-    max-height: 0.9375rem;
-    margin-right: 2%;
-}
-
-.rodape__contatos__links:hover , .rodape__conteudo__uteis__links:hover{
+.imagem__rodape:hover{
     color: #5AC051;
     transition: 0.2s;
 }
@@ -191,6 +263,7 @@ button:hover {
     }
 
     .rodape__conteudo{
+        display:flex ;
         padding-left: 0%;
         gap: 5%;
         width: auto;
@@ -198,6 +271,6 @@ button:hover {
     .rodape__conteudo__uteis{
         display: flex;
         flex-direction: column;
-        padding: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 2%;
     }
 }
