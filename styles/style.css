@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root{
+    --global-primaria-color: rgb(41, 40, 40);
+    --global-secundaria-color: aliceblue;
+    --global-terciaria-color: #5AC051;
+    --global-primaria-font: 'Courier New', Courier, monospace;
+
+}
+
 *{
     margin: 0%;
     padding: 0%;
@@ -10,18 +18,19 @@
 
 body{
     box-sizing: border-box;
-    background-color: rgb(41, 40, 40);
+    background-color: var(--global-primaria-color);
     background-image: url("/assets/background2.jpg");
     background-position: center;
     background-attachment: fixed ;
     background-size: cover;
     background-blend-mode: multiply;
+    font-family: var(--global-primaria-font);
 }
 
 .cabecalho{
     box-sizing: border-box;
     display: block;
-    color: aliceblue;
+    color: var(--global-secundaria-color);
 }
 
 .cabecalho__nome{
@@ -29,36 +38,37 @@ body{
     align-items: center;
 }
 
-.cabecalho__nome__logo{
-    padding: 0% 0% 2% 2%;
+.cabecalho__logo{
+    display: flex;
+    align-items: center;
 }
-  
+
+.cabecalho__nome__logo{
+    padding: 1% 0% 2% 2%;
+}
+
 .nome {
     display: flex;
     justify-content: center;
     position: absolute;
     padding: 0% 0% 0.2% 35.7%;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 70px;
     color:rgb(30, 63, 27) ;
 }
-  
+
   .nome__baixo {
     display: flex;
     justify-content: center;
     position: absolute;
     padding-left: 36%;
-    color: #5AC051;
+    color:var(--global-terciaria-color);
     font-size: 70px;
-    font-family: 'Courier New', Courier, monospace;
   }
 
 .cabecalho__nav{
     display: flex;
-    font-family: 'montserrat', sans-serif;
     font-size: 0.9rem;
     justify-content: space-between;
-    width: 100%;
     gap: 5%;
     padding: 0% 15% 0% 15%;
     box-sizing: border-box;
@@ -66,12 +76,12 @@ body{
 
 .cabecalho__nav__link{
     border-style: solid;
-    padding: 0.5% 0.5% 0.5% 0.5%;
+    padding: 0.5% 2% 0.5% 2%;
     border-radius: 10px;
 }
 
 .cabecalho__nav__link:hover{
-    color:#5AC051 ;
+    color:var(--global-terciaria-color) ;
     transition: 0.2s;
 }
 
@@ -80,7 +90,7 @@ body{
     padding: 5% 15% 4% 15%;
     text-align: justify;
     flex-direction: column;
-    color: #5AC051;
+    color: var(--global-terciaria-color);
 
 }
 
@@ -89,7 +99,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0.725rem;
-    font-family: 'montserrat', sans-serif;
     font-size: 1.25rem;
     text-align: justify;
     width: 100%;
@@ -98,15 +107,15 @@ body{
 }
 
 .conteudo__texto__titulo{
-    color: aliceblue;
-    font-family: 'Krona One', sans-serif;
+    color: var(--global-secundaria-color);
+    font-weight: 900;
     font-size: 1.875rem;
     text-align: center;
 }
 
 .conteudo__texto__titulo__subtitulo{
-    color: aliceblue;
-    font-family: 'Krona One', sans-serif;
+    color: var(--global-secundaria-color);
+    font-weight: 900;
     font-size: 1.25rem;
 
 }
@@ -128,11 +137,10 @@ table{
 }
 
 .curso{
-    border: 2px solid #ffffff;
+    border: 2px solid var(--global-secundaria-color);
     border-radius: 5px;
     width: 35%;
     height: auto;
-    font-family: 'montserrat', sans-serif;
 }
 
 
@@ -141,10 +149,10 @@ table{
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
-    color: aliceblue;
-    font-family: 'Krona One', sans-serif;
+    color: var(--global-secundaria-color);
+    font-weight: 900;
     font-size: 1rem;
-    
+
 }
 
 .descricao{
@@ -159,14 +167,14 @@ table{
 }
 
 .botao{
-    color: aliceblue;
+    color: var(--global-secundaria-color);
     display: flex;
     justify-content: center;
     border: 2px solid;
     border-radius: 5px;
     padding: 5px;
     margin: 0% 25%;
-    
+
 }
 
 .tabela {
@@ -175,9 +183,9 @@ table{
 }
 
 .tabela__titulo {
-    color: aliceblue;
+    color: var(--global-secundaria-color);
     margin-bottom: 5%;
-    font-family: 'Krona One', sans-serif;
+    font-weight: 900;
     font-size: 1.875rem;
 }
 
@@ -189,8 +197,7 @@ table{
 
 label {
     margin-bottom: 0.625rem;
-    color: #5AC051;
-    font-family: 'montserrat', sans-serif;
+    color: var(--global-terciaria-color);
     font-size: 1.25rem;
 }
 
@@ -209,19 +216,18 @@ button {
     padding: 0.625rem 1.25rem;
     border: none;
     border-radius: 0.3125rem;
-    background-color: #5AC051;
-    color: #fff;
+    background-color: var(--global-terciaria-color);
+    color: var(--global-secundaria-color);
     cursor: pointer;
 }
 
 button:hover, .botao:hover {
-    color: #5AC051;
+    color: var(--global-terciaria-color);
 }
 
 
 .rodape{
-    color: aliceblue;
-    font-family: 'montserrat', sans-serif;
+    color: var(--global-secundaria-color);
     font-size: 0.9rem;
     box-sizing: border-box;
     text-align: justify;
@@ -243,54 +249,34 @@ button:hover, .botao:hover {
 }
 
 .imagem__rodape:hover{
-    color: #5AC051;
+    color: var(--global-terciaria-color);
     transition: 0.2s;
 }
 
 @media (max-width:620px){
+
     .cabecalho__nav{
         display: flex;
         flex-direction: column;
         font-family: 'montserrat', sans-serif;
         font-size: 0.9rem;
-        padding: 0% 0% 0% 0%;
+        padding: 0% 25% 0% 25%;
     }
-
-    .cabecalho__nome{
-        display: flex;
-        flex-direction: column;
-        padding: 0% 0% 0% 0%;
-        margin-bottom: 0%;
-    }
-
-    .cabecalho__nome__logo{
-            padding: 0% 0% 5% 2%;
-    }
-
+    
     .cabecalho__nav__link{
         display: flex;
         justify-content: center;
         border-style: solid;
-        padding: 0.5% 0.5% 0.5% 0.5%;
         margin-bottom: 2%;
         border-radius: 10px;
-        width: 150px;
     }
+    
+
+
 
     .conteudo{
-        padding: 5% 0% 20% 0%;
+        padding: 5% 0% 8% 0%;
         width: auto;
     }
 
-    .rodape__conteudo{
-        display:flex ;
-        padding-left: 0%;
-        gap: 5%;
-        width: auto;
-    }
-    .rodape__conteudo__uteis{
-        display: flex;
-        flex-direction: column;
-        padding: 0% 0% 0% 2%;
-    }
 }
