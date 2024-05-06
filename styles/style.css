@@ -30,7 +30,7 @@ body{
 }
 
 .cabecalho__nome__logo{
-    padding-left: 2%;
+    padding: 0% 0% 2% 2%;
 }
   
 .nome {
@@ -77,7 +77,7 @@ body{
 
 .conteudo {
     display: flex;
-    padding: 5% 15% 6% 15%;
+    padding: 5% 15% 4% 15%;
     text-align: justify;
     flex-direction: column;
     color: #5AC051;
@@ -249,23 +249,32 @@ button:hover, .botao:hover {
 
 @media (max-width:620px){
     .cabecalho__nav{
-        gap: 1%;
-        padding: 0%;
-        width: auto;
-
         display: flex;
         flex-direction: column;
         font-family: 'montserrat', sans-serif;
         font-size: 0.9rem;
-        justify-content: space-between;
-        gap: 5%;
-        padding: 0% 15% 0% 15%;
-        box-sizing: border-box;
+        padding: 0% 0% 0% 0%;
     }
 
-    .cabecalho__logo{
+    .cabecalho__nome{
         display: flex;
         flex-direction: column;
+        padding: 0% 0% 0% 0%;
+        margin-bottom: 0%;
+    }
+
+    .cabecalho__nome__logo{
+            padding: 0% 0% 5% 2%;
+    }
+
+    .cabecalho__nav__link{
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        margin-bottom: 2%;
+        border-radius: 10px;
+        width: 150px;
     }
 
     .conteudo{
