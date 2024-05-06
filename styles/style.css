@@ -22,7 +22,6 @@ body{
     box-sizing: border-box;
     display: block;
     color: aliceblue;
-    gap: 10%;
 }
 
 .cabecalho__nome{
@@ -36,17 +35,19 @@ body{
   
 .nome {
     display: flex;
+    justify-content: center;
     position: absolute;
-    padding: 0% 0% 0.2% 33.7%;
+    padding: 0% 0% 0.2% 35.7%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 70px;
-    color:rgb(62, 61, 61) ;
+    color:rgb(30, 63, 27) ;
 }
   
   .nome__baixo {
     display: flex;
+    justify-content: center;
     position: absolute;
-    padding-left: 34%;
+    padding-left: 36%;
     color: #5AC051;
     font-size: 70px;
     font-family: 'Courier New', Courier, monospace;
@@ -127,19 +128,17 @@ table{
 }
 
 .curso{
-    border-style: solid;
-    border-color:#ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
     width: 35%;
-    height: 410px;
+    height: auto;
     font-family: 'montserrat', sans-serif;
-    display: flex;
 }
 
 
 .titulo{
     text-align: center;
     display: flex;
-    flex-direction: flex;
     justify-content: center;
     padding-bottom: 5%;
     color: aliceblue;
@@ -150,11 +149,11 @@ table{
 
 .descricao{
     text-align: justify;
-    padding: 0% 0% 2% 0%;
+    padding: 0% 0% 5% 0%;
 }
 
-.intro{
-    width: 100%;
+.img{
+    width: auto;
     max-width: 20rem;
     max-height: 10rem;
 }
@@ -163,8 +162,10 @@ table{
     color: aliceblue;
     display: flex;
     justify-content: center;
-    border-style: solid;
+    border: 2px solid;
     border-radius: 5px;
+    padding: 5px;
+    margin: 0% 25%;
     
 }
 
@@ -251,10 +252,20 @@ button:hover, .botao:hover {
         gap: 1%;
         padding: 0%;
         width: auto;
+
+        display: flex;
+        flex-direction: column;
+        font-family: 'montserrat', sans-serif;
+        font-size: 0.9rem;
+        justify-content: space-between;
+        gap: 5%;
+        padding: 0% 15% 0% 15%;
+        box-sizing: border-box;
     }
 
     .cabecalho__logo{
-        padding: 0% 0% 0% 0%;
+        display: flex;
+        flex-direction: column;
     }
 
     .conteudo{
