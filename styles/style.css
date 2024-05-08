@@ -265,15 +265,11 @@ button:hover, .botao:hover {
     }
     
     .nome {
-        /* position: absolute;
-        padding: 0% 0% 100% 35.7%; */
         font-size: 70px;
         color:rgb(30, 63, 27) ;
     }
     
       .nome__baixo {
-        /* position: absolute;
-        padding-left: 36%; */
         color:var(--global-terciaria-color);
         font-size: 70px;
       }
@@ -282,6 +278,42 @@ button:hover, .botao:hover {
         padding: 5% 0% 8% 0%;
         width: auto;
     }
+    
+    .tabela__curso{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1%;
+    }
+    
+    .tabela__curso__continuacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1%;
+    }
+    
+    .curso{
+        border: 2px solid var(--global-secundaria-color);
+        border-radius: 5px;
+        width: auto;
+        height: auto;
+    }
+    
+    
+    .titulo{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .descricao{
+        text-align: justify;
+        padding: 0% 0% 5% 0%;
+    }
+    
+    
 
 }
 
@@ -291,9 +323,6 @@ button:hover, .botao:hover {
         flex-direction: column;
         align-items: center;
     }
-    /* #home{
-        padding:0 50px 0 50px;
-    } */
 
     .cabecalho__nav__link{
         padding: 0 15px 0 15px ;
