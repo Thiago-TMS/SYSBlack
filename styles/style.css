@@ -313,6 +313,10 @@ button:hover, .botao:hover {
         padding: 0% 0% 5% 0%;
     }
     
+
+    form input, form textarea {
+        width: 90%;
+    }
     
 
 }
