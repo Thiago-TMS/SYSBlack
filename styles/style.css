@@ -253,26 +253,6 @@ button:hover, .botao:hover {
         padding: 0% 5% 0% 5%;
         width: auto;
     }
-    
-    .cabecalho__nome{
-        display: flex;
-        align-items: center;
-    }
-    
-    
-    .cabecalho__nome__logo{
-        padding: 1% 0% 2% 2%;
-    }
-    
-    .nome {
-        font-size: 70px;
-        color:rgb(30, 63, 27) ;
-    }
-    
-      .nome__baixo {
-        color:var(--global-terciaria-color);
-        font-size: 70px;
-      }
 
     .conteudo{
         padding: 5% 0% 8% 0%;
@@ -294,25 +274,10 @@ button:hover, .botao:hover {
     }
     
     .curso{
-        border: 2px solid var(--global-secundaria-color);
-        border-radius: 5px;
         width: auto;
         height: auto;
     }
-    
-    
-    .titulo{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    
-    }
-    
-    .descricao{
-        text-align: justify;
-        padding: 0% 0% 5% 0%;
-    }
-    
+
 
     form input, form textarea {
         width: 90%;
